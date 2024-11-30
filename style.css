@@ -5,11 +5,11 @@ html, body {
     padding: 1em;
 }
 
-h1 {
-    text-align: center;
-}
-
 hr {
     margin: 3em 0;
     color: #fff;
+}
+
+p {
+    max-width: calc(1em * 80);
 }
