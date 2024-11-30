@@ -1,0 +1,15 @@
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: monospace;
+    padding: 1em;
+}
+
+h1 {
+    text-align: center;
+}
+
+hr {
+    margin: 3em 0;
+    color: #fff;
+}
