@@ -18,7 +18,7 @@ function clearCanvas() {
 function mouseClicked(event) {
     console.log(event.x, event.y)
     textSize(mousesize);
-    translate(-mousesize,-mousesize);
+    // translate(-mousesize,-mousesize);
   text(letter, event.x,event.y);
   console.log("letter", letter)
 }
@@ -31,7 +31,7 @@ function keyPressed(event) {
 
 function setup() {
   let cvx = createCanvas(fw, fh);
-  Reflect(0,0,fw,fh);
+  
   cvx.mouseWheel(
     (event) => {
       console.log(event.deltaY);
@@ -45,8 +45,10 @@ function setup() {
     
 
   )
+
   backgroundSet();
-  circle(10,10,10,10);
+  stroke(0);
+  rect(0,0,fw,fh);
   window.document.getElementById("clearCanvas").addEventListener("click", () => {
     clearCanvas()
   });
@@ -54,10 +56,7 @@ function setup() {
     saveCanvas("circlepop")
   });
 
-  //...
-  textSize(mousesize);
   
-  text(letter, cw,ch);
 
   
   
