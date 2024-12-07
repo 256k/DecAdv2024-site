@@ -31,6 +31,7 @@ function keyPressed(event) {
 
 function setup() {
   let cvx = createCanvas(fw, fh);
+  Reflect(0,0,fw,fh);
   cvx.mouseWheel(
     (event) => {
       console.log(event.deltaY);
